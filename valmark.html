@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Valmark Apas</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body style="overflow-x: hidden;">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
+    <div id="logincontainer1">
+        <button style="margin-left: 250px;cursor: pointer;" onclick="close2()">X</button>
+        <div id="logincontainer3">
+            <form action="">
+                <br>
+            <label for="getintouch" style="margin-left: 70px;cursor: pointer;">Request for call !</label><br>
+            <br>    
+            <input type="name" value=" Name *" id="inputbox"><br>
+            <br>    
+            <input type="email" value=" Email *" id="inputbox">
+            <br>
+            <br>    
+            <input type="email" value=" Contact No *" id="inputbox">
+            <br><br>
+            <input type="radio" name="imgsel"  value="" checked="checked" />
+            <label for="policy" style="font-size: 13px;">I agree to receive more information</label><br><br>
+            <button id="submitbutton" >SUBMIT</button><br>
+            </form>
+        </div>
+    </div>
+    <div id="mainbox">
+        <div id="wallpaper" name="slide">
+            <div style="padding-top: 30px;">
+                <i class="bi bi-telephone" style="color:black;opacity: 0.5;margin-left:1110px;margin-top: 100px;padding: 10px;border: 2px;border-color:azure;border-style: solid;border-radius: 20px;"></i>
+                <label for="phone number" style="font-family: 'Lato', sans-serif;
+                font-family: 'Montserrat', sans-serif;">+91 94436213323</label>
+            </div>
+            <div id="logincontainer">
+                <div id="logincontainer2">
+                    <form action="getintouch.php" method="post">
+                        <br>
+                    <label for="getintouch" style="margin-left: 70px;">Get in Touch !</label><br>
+                    <br>    
+                    <input type="name" value=" Name *" id="inputbox" name="name"><br>
+                    <br>    
+                    <input type="email" value=" Email *" id="inputbox" name="email">
+                    <br>
+                    <br> 
+                    <input type="text" value="Phone no *" id="inputbox" name="ContactNo">
+                    <br>
+                    <br>    
+                    <input type="radio" name="imgsel"  value="" checked="checked" />
+                    <label for="policy" style="font-size: 13px;">I agree to receive more information</label><br><br>
+                    <button id="submitbutton" >SUBMIT</button><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            var i=0;
+            var image = [];
+            changeImg();
+            image[0]='updated_01-min.png';
+            image[1]='updated_02-min.png';
+            var time = 5000;
+            function changeImg(){
+                var background = document.getElementById("wallpaper");
+                background.style.backgroundImage="url("+image[i]+")";
+                if(i<image.length-1){
+                    i++;
+                }
+                else
+                {
+                    i=0;
+                }
+                setTimeout("changeImg()",time);
+            }
+        </script>
+        <div style="text-align: center;" data-aos="fade-down">
+            <div data-aos="fade-down">
+            <br>
+            <h2>VALMARK APAS</h2>
+            <hr>
+            <p><b>Luxury 3 & 4 BHK Apartment, Bannerghatta road</b></p>
+            <p style="font-size: 12px;">This is not a holiday destination. This is the Valmark.With great care and attention to detail these 112 
+                homes with 3, 4 and 5 bedrooms luxury aprtments are enticing to <br>  anyone. 
+                Located just oﬀ Bannerghatta Road, Bangalore’s most luxurious residential property oﬀers a beautiful view of the sun rising over the Hulimavu Lake from every apartment.
+            </p><br><br>
+            </div>
+            <div data-aos="fade-down">
+                <h2>OVERVIEW</h2>
+                <hr>
+                <div>
+                    <div class="grid-container" style="float:left;">
+                        <div class="grid-item1">Starting Price</div>
+                        <div class="grid-item2">₹3.3 Cr* Onwards</div>
+                        <div class="grid-item1" style="margin-top: 20px;">Configuration</div>   
+                        <div class="grid-item2" style="margin-top: 20px;">3 & 4 Bed Residences</div>
+                        <div class="grid-item1" style="margin-top: 40px;">Status</div>
+                        <div class="grid-item2" style="margin-top: 40px;">Ready To Move in OC Received</div>   
+                    </div>
+                    <div class="grid-container" style="margin-left: 800px;"> 
+                        <div class="grid-item1">Location</div>
+                        <div class="grid-item2">Bannerghatta Road, Bangalore</div>
+                        <div class="grid-item1" style="margin-top: 20px;">SBA (Sq. Ft.)</div>   
+                        <div class="grid-item2" style="margin-top: 20px;">SBA (Sq. Ft.) 3170-3560 Sq. Ft</div>
+                        <div class="grid-item1" style="margin-top: 40px;">No. of Units</div>
+                        <div class="grid-item2" style="margin-top: 40px;">112 Units</div> 
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div data-aos="fade-down">
+                <h2>PROJECT HIGHLIGHTS</h2>
+                <hr>
+                <div>
+                    <div class="grid-container1">
+                        <div class="grid-item"><p>State-of-the-art reinforced concrete wall technology with imported aluminium framework.</p></div>
+                        <div class="grid-item"><p>Conceptualised, designed and created by world-re- nowned architects, consultants and designers.</p></div>
+                        <div class="grid-item"><p>Each apartment at Apas is fully 'Vastu-compliant.</p></div>
+                        <div class="grid-item"><p>Located in one of the most rapidly-developing localities in the north-eastern part of Bangalore.</p></div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div data-aos="fade-down">
+                <h2>DISCOVERED THE JOYS OF LAKEFRONT LIVING</h2>
+                <hr><br><br>
+                <div>
+                    <div style="float: left;margin-left: 220px;">
+                        <img src="1img.jpg" alt="" width="550px" data-aos="flip-up">
+                    </div>
+                    <div style="text-align: left;margin-left: 780px;">
+                        <p><b>The Best Place To Live In Has A View To Die For</b><br><br>
+                        <small> With every apartment at Apas facing the scenic Hulimavu Lake, the <br> breathtaking paranomic view is bound to be a refreshing change of scene for those tired of concrete jungle</small>
+                            <br><br>
+                        <b> Design Your New Home As You Like. Pay For It As You Like</b>
+                            <br><br>
+                        <small>Owning your dream home just got easier. Because like our apartments , <br> our payment plans can also be customised to suit your ﬁnancial needs</small>
+                            <br><br>
+                        <b>We Have Left The Design To You.</b>
+                            <br><br>
+                        <small>You can design the ample space in your apart- ment according to your needs. Let your <br> home ﬁt your personality</small>
+                        </p>
+                        <button id="submitbutton" style="margin-left: 200px;border-radius: 15px;">Download</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down">
+                <h2>AMENITIES</h2>
+                <hr><br>
+                <p><b>Amenities So Good, You Might Never Leave Home Again</b></p><br>    
+            </div>
+        </div>
+        <div style="margin-left: 200px;float: left;" data-aos="flip-up">
+            <ul>
+                <li>Clubhouse/ Multi- Purpose Hall</li>
+                <li>Gym & Fitness Centre</li>
+                <li>Jacuzzi, Steam & Sauna</li>
+                <li>Indoor Badminton court</li>
+                <li>Gaming Zone</li>
+                <li>Mini Theatre</li>
+                <li>Sky Lounge</li>
+                <li>Swimming Pool</li>
+                <li>Cricket Practice Pitch</li>
+                <li>Fitness Centre</li>
+                <li>Amphitheatre</li>
+            </ul>         
+            <br><br>
+            <button id="submitbutton" style="margin-left: 150px;border-radius: 15px;">Request Quote</button>
+        </div>
+        <div style="margin-left: 700px;" data-aos="flip-up">
+            <img src="2img.jpg" alt="" width="550px">
+        </div>
+        <br><br>
+        <div data-aos="fade-down" style="text-align: center;">
+            <h2>LOCATION</h2>
+            <hr><br>
+            <p><b>Far From Ordinary, Close To Everything Else</b></p>
+            <h5>Located just oﬀ Bannerghatta Road, overlooking the Hulimavu Lake, 
+                the property is at the crossroads of thriving metropolis and beautiful, serene nature.</h5><br>
+            <div style="float: left;margin-left: 230px;">
+                <div class="contentbox">
+                    <div style="border: 1px;border-style: solid;cursor: pointer;border-radius: 5px;padding: 10px;width: 300px;text-align: center;" onclick="call(1)" id="card1">
+                        <div style="float: left;">Eductional details</div>
+                        <div style="margin-left: 260px;">+</div>
+                        <div id="content1">
+                            <ul>
+                                <li>Mathan</li>
+                                <li>Logesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="border: 1px;border-style: solid;cursor: pointer;border-radius: 5px;padding: 10px;width: 300px;text-align: center;" onclick="call(2)" id="card2">
+                        <div style="float: left;">Eductional details</div>
+                        <div style="margin-left: 260px;">+</div>
+                        <div id="content2" style="display: none;">
+                            <ul>
+                                <li>Mathan</li>
+                                <li>Logesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="border: 1px;border-style: solid;cursor: pointer;border-radius: 5px;padding: 10px;width: 300px;text-align: center;" onclick="call(3)" id="card3">
+                        <div style="float: left;">Eductional details</div>
+                        <div style="margin-left: 260px;">+</div>
+                        <div id="content3" style="display: none;">
+                            <ul>
+                                <li>Mathan</li>
+                                <li>Logesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="border: 1px;border-style: solid;cursor: pointer;border-radius: 5px;padding: 10px;width: 300px;text-align: center;" onclick="call(4)" id="card4">
+                        <div style="float: left;">Eductional details</div>
+                        <div style="margin-left: 260px;">+</div>
+                        <div id="content4" style="display: none;">
+                            <ul>
+                                <li>Mathan</li>
+                                <li>Logesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="border: 1px;border-style: solid;cursor: pointer;border-radius: 5px;padding: 10px;width: 300px;text-align: center;" onclick="call(5)" id="card5">
+                        <div style="float: left;">Eductional details</div>
+                        <div style="margin-left: 260px;">+</div>
+                        <div id="content5" style="display: none;">
+                            <ul>
+                                <li>Mathan</li>
+                                <li>Logesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var cardbox=1;
+                    var content="content";
+                    var s1 = "card";
+                    function call(b){
+                        console.log(s1);
+                        document.getElementById(content+cardbox).style.display="none";
+                        document.getElementById(s1+cardbox).style.height="40px";
+                        cardbox=b;
+                        document.getElementById(content+cardbox).style.display="block";
+                        document.getElementById(s1+cardbox).style.height="80px";
+                    }
+                </script>
+            </div>
+            <div style="margin-left: 200px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7825.4121377096235!2d77.62087710000004!3d11.283003700000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692521626362!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <br><br>     
+        <div id="requestcontainer">
+            <h3 style="margin-top: 50px;">Request For A Site Visit</h3>
+            <h3>Special Offer is applicable for a limited time only!</h3>
+            <h5>Please Enter Your Details To Know More</h5>
+            <i class="bi bi-person"></i>
+            <input class="input-field" type="text">
+            <i class="bi bi-phone" style="margin-left: 20px;"></i>
+            <input class="input-field" type="text">
+            <i class="bi bi-envelope" style="margin-left: 20px;"></i>
+            <input class="input-field" type="text"> <br><br>
+            <button id="submitbutton" style="border-radius: 15px;background-color: aliceblue;color: black;">Submit</button>
+        </div><br><br>
+        <div style="text-align: center;">
+            <h2>LUXURY LIVING AT APAS</h2>
+            <hr><br>
+            <div id="flexbox">
+                <button id="b1" style="margin-left: 480px;" onclick="projectview()">Project Views</button>
+                <button id="b2" style="margin-left: 50px;" onclick="interior()">Interior</button>
+                <button id="b3" style="margin-left: 50px;" onclick="amenities()">Amenities</button>
+                <button id="b4" style="margin-left: 50px;" onclick="projectunit()">Project Unit Plans</button>
+            </div>
+            <div id="projectview">
+                <img src="tab1.jpg" alt="" id="box" onclick="toggle(1)">
+                <img src="tab2.jpg" alt="" id="box" onclick="toggle(2)">
+                <img src="tab3.jpg" alt="" id="box" onclick="toggle(3)">
+                <img src="tab4.jpg" alt="" id="box" onclick="toggle(4)">
+                <img src="tab5.jpg" alt="" id="box" onclick="toggle(5)">
+            </div>
+            <div id="interior">
+                <img src="tab1.jpg" alt="" id="box">
+                <img src="tab2.jpg" alt="" id="box">
+                <img src="tab3.jpg" alt="" id="box">
+            </div>
+            <div id="amenities">
+                <img src="tab1.jpg" alt="" id="box">
+                <img src="tab2.jpg" alt="" id="box">
+            </div>
+            <div id="projectunit">
+                <img src="tab1.jpg" alt="" id="box">
+                <img src="tab2.jpg" alt="" id="box">
+                <img src="tab3.jpg" alt="" id="box">
+                <img src="tab4.jpg" alt="" id="box">
+            </div>
+        </div><br><br><br><br><br>
+        <br><br>
+        <div id="requestcontainer1">
+            Marketed By - Authorised Channel Partner, RERA Registration No - PRM/KA/RERA/1251/309/AG/221014/003132 <br>
+    Disclaimer : The content mentioned in this website is for information purposes only, prices mentioned are subject to change without notice & properties mentioned are subject to  <br>
+    availability. Images are for representation purposes only. This is not the official website. This website belongs to the official channel partner of Valmark Group. We may also send <br>
+    updates to the mobile / email id registered with us. All Rights Reserved.
+        </div>
+        
+    </div>
+    <div id="box1">
+        <button style="margin-left: 990px;" onclick="close1()">X</button>
+        <button style="float: left;margin-top: 300px;color:aliceblue;background-color: black;" onclick="leftside()"><</button>
+        <img src="" alt="" style="float: left;margin-left: 20px;" id="fullimg">
+        <button style="float: left;margin-top: 300px;margin-left: 20px;color:aliceblue;background-color: black;" onclick="rightside()">></button>
+    </div>
+</body>
+</html>

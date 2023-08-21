@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Valmark Apas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        #logincontainer4{
+            padding: 10px;
+            background-color:whitesmoke;
+            width:300px;
+            height: 200px;
+            margin-top: 140px;
+            margin-left: 1050px;
+            opacity: 0.8;
+        }
+        #logincontainer5{
+            padding: 10px;
+            background-color:whitesmoke;
+            width:250px;
+            height: 150px;
+            margin-top: 15px;
+            margin-left: 15px;
+            opacity: .9;
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div id="wallpaper" name="slide">
+            <div style="padding-top: 30px;">
+                <i class="bi bi-telephone" style="color:black;opacity: 0.5;margin-left:1110px;margin-top: 100px;padding: 10px;border: 2px;border-color:azure;border-style: solid;border-radius: 20px;"></i>
+                <label for="phone number" style="font-family: 'Lato', sans-serif;
+                font-family: 'Montserrat', sans-serif;">+91 94436213323</label>
+            </div>
+            <div id="logincontainer4">
+                <div id="logincontainer5">
+                    <form action="mailer.php" method="post">
+                        <label for="Subject">Subject</label>
+                        <input type="text" name="Subject">
+                        <label for="Message">Enter the message</label>
+                        <textarea rows = "5" cols = "30" name = "Message">
+                         </textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            var i=0;
+            var image = [];
+            changeImg();
+            image[0]='updated_01-min.png';
+            image[1]='updated_02-min.png';
+            var time = 5000;
+            function changeImg(){
+                var background = document.getElementById("wallpaper");
+                background.style.backgroundImage="url("+image[i]+")";
+                if(i<image.length-1){
+                    i++;
+                }
+                else
+                {
+                    i=0;
+                }
+                setTimeout("changeImg()",time);
+            }
+        </script>
+        <div id="requestcontainer1">
+            Marketed By - Authorised Channel Partner, RERA Registration No - PRM/KA/RERA/1251/309/AG/221014/003132 <br>
+            Disclaimer : The content mentioned in this website is for information purposes only, prices mentioned are subject to change without notice & properties mentioned are subject to  <br>
+            availability. Images are for representation purposes only. This is not the official website. This website belongs to the official channel partner of Valmark Group. We may also send <br>
+            updates to the mobile / email id registered with us. All Rights Reserved.
+        </div>
+        
+    </div>
+</body>
+</html>

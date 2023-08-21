@@ -1,0 +1,233 @@
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+#wallpaper{
+  background-image: url("updated_02-min.png");
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+#logincontainer{
+  padding: 10px;
+  background-color:whitesmoke;
+  width:300px;
+  height: 370px;
+  margin-top: 140px;
+  margin-left: 1050px;
+  opacity: 0.8;
+}
+#logincontainer2{
+  padding: 10px;
+  background-color:whitesmoke;
+  width:250px;
+  height: 310px;
+  margin-top: 15px;
+  margin-left: 15px;
+  opacity: .9;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+}
+#inputbox{
+  margin-left: 20px;
+  width: 200px;
+  height: 30px;
+  background-color:rgb(242, 240, 240);
+  opacity: 0.5;
+  border-radius: 5px;
+}
+#submitbutton{
+  background-color:#0077b6;
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+h2{
+  color:#0077b6;
+}
+hr{
+  width:100px;
+  height:3px;
+  border-width:0;
+  color:rgb(178, 178, 36);
+  background-color:rgb(240, 240, 112)
+}
+.grid-container {
+  margin-left: 200px;
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 100px 100px ;
+  padding: 10px;
+  width: 100px;
+}
+.grid-item1{
+  background-color: #0077b6;
+  padding: 15px;
+  height: 15px;
+  font-size: 12px;
+  text-align: left;
+  width: 200px;
+  color: white;
+}
+.grid-item2{
+  background-color: #0077b6;
+  padding: 15px;
+  height:15px;
+  width: 200px;
+  margin-left: 100px;
+  font-size: 12px;
+  text-align: right;
+  color: white;    
+}
+.grid-container1{
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 100px 100px;
+  margin-left: 200px;
+  padding: 20px;
+  width: 200px;
+  grid-column-gap: 200px;
+  grid-row-gap: 50px;
+}
+.grid-item {
+  background-color: rgba(135, 130, 130, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+#requestcontainer{
+  padding: 10px;
+  width: 98%;
+  height: 400px;
+  background-color: #0077b6;
+  text-align: center;
+  color: black;
+}
+#requestcontainer1{
+  padding: 10px;
+  height: 100px;
+  width: 98%;
+  background-color: black;
+  text-align: center;
+  color:aliceblue;
+}
+#flexbox{
+display: flex;
+}
+#b1{
+background-color: white;
+color: black;
+border-color: aliceblue;
+border: none;
+cursor: pointer;
+}
+#b2{
+background-color: white;
+color: black;
+border-color: aliceblue;
+border: none;
+cursor: pointer;
+}
+#b3{
+background-color: white;
+color: black;
+border-color: aliceblue;
+border: none;
+cursor: pointer;
+}
+#b4{
+background-color: white;
+color: black;
+border-color: aliceblue;
+border: none;
+cursor: pointer;
+}
+#projectview{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  grid-column-gap: 300px;
+  grid-row-gap: 100px;
+  padding: 10px;
+  margin-left: 150px;
+}
+#box{
+padding: 10px;
+cursor: pointer;
+width: 300px;
+}
+#interior{
+display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px;
+grid-column-gap: 300px;
+grid-row-gap: 100px;
+padding: 10px;
+margin-left: 150px;
+display: none;
+}
+#projectunit{
+display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px;
+grid-column-gap: 300px;
+grid-row-gap: 100px;
+padding: 10px;
+margin-left: 150px;
+display: none;
+}
+#amenities{
+display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px;
+grid-column-gap: 300px;
+grid-row-gap: 100px;
+padding: 10px;
+margin-left: 150px;
+display: none;
+}
+#box1{
+display: none;
+position:fixed;
+top: 200px;
+transition: 2s;
+}
+#box1.active{
+display: block;
+top: 2%;
+left: 15%;
+transition: 2s;
+}
+#logincontainer1{
+padding: 10px;
+position:fixed;
+background-color:whitesmoke;
+width:300px;
+height: 370px;
+left: 35%;
+transition: 2s;
+display: none;
+}
+#logincontainer3{
+padding: 10px;  
+background-color:whitesmoke;
+width:250px;
+height: 310px;
+margin-top: 15px;
+margin-left: 15px;
+border: 2px;
+border-color: black;
+border-style: solid;
+}
+.contentbox{
+padding:10px;
+height:400px;
+width: 300px;
+}
